@@ -60,9 +60,7 @@ def main() -> None:
     st.write(
         "このアプリでは、ラジオボタンで専門家を切り替えながらテキスト入力を基に OpenAI GPT モデルに質問できます。"
     )
-    st.info(
-        "Streamlit Community Cloud では `Secrets` に `OPENAI_API_KEY` を登録し、Python 3.11 を runtime に設定してください。"
-    )
+    st.caption("ラジオボタンで専門家を切り替え、入力内容を送信してください。")
 
     persona = st.radio("専門家を選択してください", list(SYSTEM_PROMPTS.keys()))
 
